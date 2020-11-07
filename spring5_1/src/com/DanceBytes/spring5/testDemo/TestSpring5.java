@@ -1,5 +1,7 @@
 package com.DanceBytes.spring5.testDemo;
 
+import com.DanceBytes.spring5.Book;
+import com.DanceBytes.spring5.Order;
 import com.DanceBytes.spring5.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -21,5 +23,22 @@ public class TestSpring5 {
         System.out.println(user);
 
         user.add();
+    }
+
+    @Test
+    public void testbook1(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+        Book book = context.getBean("book", Book.class);
+        System.out.println(book);
+        book.testDemp();
+    }
+
+    @Test
+    public void testorder(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+        Order order = context.getBean("order", Order.class);
+
+        System.out.println(order);
+        order.show();
     }
 }

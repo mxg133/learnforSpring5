@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-
+    <!--
+    1、基于 xml 方式创建对象
+        (1)在 spring 配置文件中，使用 bean 标签，标签里面添加对应属性，就可以实现对象创建
+        (2)在 bean 标签有很多属性，介绍常用的属性
+            * id 属性:唯一标识
+                name :和id一样 只是可以用特殊字符
+            * class 属性:类全路径(包类路径)
+        (3)创建对象时候，默认也是执行无参数构造方法完成对象创建
+        -->
     <!--1 配置User对象创建-->
-    <bean id="user" class="com.DanceBytes.spring5.User"></bean>
+    <bean id="user" name="" class="com.DanceBytes.spring5.User"></bean>
 
+    <!--2 set方法注入属性-->
+<!--    <bean id="book" class="com.DanceBytes.spring5.Book">-->
+<!--        &lt;!&ndash;使用property完成属性注入-->
+<!--            name：类里面属性名称-->
+<!--            value：向属性注入的值-->
+<!--        &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="bname" value="成长记"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="bauthor" value="月"></property>&ndash;&gt;-->
+
+<!--    </bean>-->
+    <!--3 有参数构造注入属性-->
+    <bean id="order"  class="com.DanceBytes.spring5.Order">
+        <constructor-arg index="0" name="oname" value="订单"/>
+        <constructor-arg index="1" name="oaddress" value="Made in Japan"/>
+    </bean>
+
+
+    <!--2 set方法注入属性-->
+    <bean id="book" class="com.DanceBytes.spring5.Book">
+        <!--使用property完成属性注入
+            name：类里面属性名称
+            value：向属性注入的值
+        -->
+        <property name="bname" value="成长记"></property>
+        <property name="bauthor" value="月"></property>
+        <!--null值-->
+<!--        <property name="address">-->
+<!--            <null/>-->
+<!--        </property>-->
+        <property name="address">
+            <value><![CDATA[<<杭😄州>>]]></value>
+        </property>
+        <!--属性值包含特殊符号
+            1 把<>进行转义 &lt; &gt;
+            2 把带特殊符号内容写到CDATA
+        -->
+    </bean>
 </beans>
