@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    级连赋值-->
+    <bean id="emp" class="com.DanceBytes.spring5.bean.Emp">
+        <property name="ename" value="露西"></property>
+        <property name="gender" value="女的"></property>
+
+        <property name="dept" ref="dept"></property>
+        <property name="dept.dname" value="女技师"></property>
+    </bean>
+
+    <bean id="dept" class="com.DanceBytes.spring5.bean.Dept">
+        <property name="dname" value="前台小姐"></property>
+    </bean>
+</beans>

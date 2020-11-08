@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="emp" class="com.DanceBytes.spring5.bean.Emp">
+        <property name="ename" value="露西"></property>
+        <property name="gender" value="女的"></property>
+        <property name="dept">
+            <bean id="dept" class="com.DanceBytes.spring5.bean.Dept">
+                <property name="dname" value="保安部"></property>
+            </bean>
+        </property>
+    </bean>
+</beans>
