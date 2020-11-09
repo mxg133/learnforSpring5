@@ -11,8 +11,8 @@
         <value>book2</value>
         <value>book3</value>
     </util:list>
-
-    <bean id="book" class="com.DanceBytes.spring5.collectiontype.Book">
+<!--    单实例对象-->
+    <bean scope="prototype" id="book" class="com.DanceBytes.spring5.collectiontype.Book">
         <property name="list" ref="bookList"></property>
     </bean>
 </beans>

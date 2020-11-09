@@ -22,8 +22,11 @@ public class TestSpring5Demo1 {
     @Test
     public void test2(){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean2.xml");
-        Book book = context.getBean("book", Book.class);
-        book.show();
+        Book book1 = context.getBean("book", Book.class);
+        Book book2 = context.getBean("book", Book.class);
+//        book.show();
+        System.out.println(book1);
+        System.out.println(book2);
     }
         @Test
     public void test3(){
