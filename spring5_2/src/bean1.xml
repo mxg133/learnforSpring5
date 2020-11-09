@@ -29,6 +29,20 @@
                 <value>set1</value>
             </set>
         </property>
+        <property name="coursesList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="course1" class="com.DanceBytes.spring5.collectiontype.Course">
+        <property name="cname" value="spring5课程1"></property>
+    </bean>
+
+    <bean id="course2" class="com.DanceBytes.spring5.collectiontype.Course">
+        <property name="cname" value="spring5课程2"></property>
     </bean>
 
 

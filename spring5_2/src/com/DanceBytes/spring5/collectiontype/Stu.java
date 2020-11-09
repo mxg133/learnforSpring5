@@ -17,6 +17,7 @@ public class Stu {
     private List<String> list;
     private Map<String, String> maps;
     private Set<String> sets;
+    private List<Course> coursesList;
 
     public void setCourses(String[] courses) {
         this.courses = courses;
@@ -31,13 +32,20 @@ public class Stu {
     }
 
     public void setSets(Set<String> sets) {
+
         this.sets = sets;
     }
+
+    public void setCoursesList(List<Course> coursesList) {
+        this.coursesList = coursesList;
+    }
+
     public void show() {
         System.out.println();
         System.out.println(Arrays.toString(courses));
         System.out.println(list);
         System.out.println(maps);
         System.out.println(sets);
+        System.out.println(coursesList);
     }
 }
