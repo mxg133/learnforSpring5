@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="com.DanceBytes.spring5.collectiontype.Stu">
+        <property name="courses">
+            <array>
+                <value>java</value>
+                <value>mysql</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>list0</value>
+                <value>list1</value>
+            </list>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="map1" value="map11"></entry>
+                <entry key="map2" value="map22"></entry>
+            </map>
+        </property>
+        <property name="sets">
+            <set>
+                <value>set0</value>
+                <value>set1</value>
+            </set>
+        </property>
+    </bean>
+
+
+
+</beans>

@@ -8,45 +8,13 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library>
+      <library name="commons-logging-1.1.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-beans-5.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-context-5.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-core-5.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-expression-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/spring5_2/src/lib/commons-logging-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-beans-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-context-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-core-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-expression-5.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
