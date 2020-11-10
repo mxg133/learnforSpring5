@@ -1,5 +1,7 @@
 package com.DanceBytes.spring5.testDemo;
 
+import com.DanceBytes.spring5.autowire.Emp;
+import com.DanceBytes.spring5.bean.Orders;
 import com.DanceBytes.spring5.collectiontype.Book;
 import com.DanceBytes.spring5.collectiontype.Course;
 import com.DanceBytes.spring5.collectiontype.Stu;
@@ -33,6 +35,23 @@ public class TestSpring5Demo1 {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean3.xml");
          Course course = context.getBean("myBean", Course.class);
          System.out.println(course);
+    }
+
+    @Test
+    public void test4(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean4.xml");
+        Orders orders = context.getBean("orders", Orders.class);
+        System.out.println("4. 创建bean对象是例子");
+        System.out.println(orders);
+
+        context.close();
+    }
+
+    @Test
+    public void test5(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean5.xml");
+        Emp emp = context.getBean("emp", Emp.class);
+        emp.show();
     }
 
 
