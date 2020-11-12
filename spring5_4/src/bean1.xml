@@ -10,11 +10,11 @@
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-<!-- 开启注解扫描   -->
+    <!-- 开启注解扫描   -->
     <context:component-scan base-package="com.Dancebytes.spring5.aopanno"/>
 
-<!-- 开启 AspectJ 生成注解对象
-     扫描 有 @Aspect 注解的 类， 生成代理对象
-       -->
+    <!-- 开启 AspectJ 生成注解对象
+         扫描 有 @Aspect 注解的 类， 生成代理对象
+           -->
     <aop:aspectj-autoproxy/>
 </beans>

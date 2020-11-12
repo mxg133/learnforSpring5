@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Bean1" removed="false">
+          <file>file://$MODULE_DIR$/src/bean1.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -15,6 +24,45 @@
           <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-context-5.3.0.jar!/" />
           <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-core-5.3.0.jar!/" />
           <root url="jar://$MODULE_DIR$/spring5_2/src/lib/spring-expression-5.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.springsource.net.sf.cglib-2.2.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/lib/com.springsource.net.sf.cglib-2.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/com.springsource.org.aopalliance-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/commons-logging-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/druid-1.1.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-aop-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-aspects-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-beans-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-context-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-core-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-expression-5.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/lib/mysql-connector-java-5.1.7-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-jdbc-5.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/lib/spring-jdbc-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-orm-5.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/lib/spring-tx-5.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
