@@ -1,4 +1,4 @@
-package com.Dancebytes.spring5.dao.impl;
+package com.Dancebytes.spring5.dao;
 
 import com.Dancebytes.spring5.dao.BookDao;
 import com.Dancebytes.spring5.entity.Book;
