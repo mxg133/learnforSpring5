@@ -6,17 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="webfluxdemo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="11" />
       <module name="demoreactor" target="1.8" />
       <module name="Reactor" target="1.8" />
+      <module name="webfluxdemo1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Reactor" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="demoreactor" options="-parameters" />
+      <module name="webfluxdemo1" options="-parameters" />
     </option>
   </component>
 </project>

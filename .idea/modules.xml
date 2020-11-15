@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnforSpring5.iml" filepath="$PROJECT_DIR$/learnforSpring5.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_1/spring5_1.iml" filepath="$PROJECT_DIR$/spring5_1/spring5_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_2/spring5_2.iml" filepath="$PROJECT_DIR$/spring5_2/spring5_2.iml" />
@@ -9,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring5_4/spring5_4.iml" filepath="$PROJECT_DIR$/spring5_4/spring5_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_5/spring5_5.iml" filepath="$PROJECT_DIR$/spring5_5/spring5_5.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_tx1/spring5_tx1.iml" filepath="$PROJECT_DIR$/spring5_tx1/spring5_tx1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webfluxdemo1/webfluxdemo1.iml" filepath="$PROJECT_DIR$/webfluxdemo1/webfluxdemo1.iml" />
     </modules>
   </component>
 </project>
